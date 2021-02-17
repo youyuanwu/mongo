@@ -2,8 +2,9 @@ version: '3'
 
 services:
   mongo:
-    image: 'mongo'
+    image: 'mongo:4.2'
     container_name: 'mongov'
+    hostname: 'mongov'
     environment:
       MONGO_INITDB_ROOT_USERNAME: 'mongov'
       MONGO_INITDB_ROOT_PASSWORD: 'mongov'
